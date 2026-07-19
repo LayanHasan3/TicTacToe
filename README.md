@@ -35,8 +35,7 @@ The game window will open. Click any cell to play as X. The AI responds as O.
 tictactoe.py
     ├── check_winner(board) # Detects if X or O has won
     ├── is_draw(board) # Checks if board is full with no winner
-    ├── terminal_test(board) # Combines winner + draw check
-    ├── utility(board, depth) # Returns score for terminal state
+    |── minimax(board, depth, is_maximizing) # Recursively simulates every possible move and returns a score for the given board state.
     ├── max_value(board, depth) # Minimax MAX-VALUE (AI's turn)
     ├── min_value(board, depth) # Minimax MIN-VALUE (Human's turn)
     ├── best_move(board) # MINIMAX-DECISION — picks best move
